@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-[#014E56]">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+          <img src="myteam.png" alt="Logo" class="h-8" />
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#" class="text-white font-semibold hover:text-[#F67E7E]">Home</a>
+            <a href="#" class="text-white font-semibold hover:text-[#F67E7E]">About</a>
+            <button class="border border-white text-white rounded-full py-2 px-6 hover:bg-white hover:text-[#014E56] transition">
+              Contact Us
+            </button>
+          </div>
+  
+  
+          <button class="md:hidden" onclick="toggleMenu()">
+            <i class="fas fa-bars text-white text-xl"></i>
+          </button>
+        </div>
+  
+  
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+          <a href="#" class="block py-2">Home</a>
+          <a href="#" class="block py-2">About</a>
+          <a href="#" class="block py-2">Contact Us</a>
+        </div>
+      </header>
+  
+
+      <section class="bg-[#014E56] py-20 px-4">
+        <div
+          class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 justify-between"
+        >
+          <h1 class="text-white text-5xl font-bold flex-shrink-0  ">About</h1>
+          <p class="text-white text-base sm:text-lg font-medium leading-relaxed max-w-2xl pt-7">
+            We help companies build dynamic teams made up of top global talent. Using our
+            network of passionate professionals we drive innovation and deliver incredible
+            outcomes. Talented, diverse teams shape the best products and experiences.
+            We’ll bring those teams to you.
+          </p>
+        </div>
+      </section>
+    
+
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      
+
+<main class="bg-[#004047] py-20 px-4">
+    <h1 class="text-white text-4xl sm:text-5xl font-bold text-center mb-12">Meet the directors</h1>
+    <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+
+      <div class="bg-[#012F34] p-6 text-center rounded-lg">
+        <img src="Oval.png" alt="Nikita Marks" class="mx-auto mb-4 w-24 h-24"/>
+        <h2 class="text-white font-bold text-lg">Nikita Marks</h2>
+        <p class="text-white text-sm">Founder & CEO</p>
+        <img src="Group 13.png" alt="socials" class="mx-auto mt-4"/>
+      </div>
+  
+
+      <div class="bg-[#012F34] p-6 text-center rounded-lg">
+        <img src="Oval (1).png" alt="Cristian Duncan" class="mx-auto mb-4 w-24 h-24"/>
+        <h2 class="text-white font-bold text-lg">Cristian Duncan</h2>
+        <p class="text-white text-sm">Co-founder & COO</p>
+        <img src="Group 13.png" alt="socials" class="mx-auto mt-4"/>
+      </div>
+  
+
+      <div class="bg-[#012F34] p-6 text-center rounded-lg">
+        <img src="Oval (2).png" alt="Cruz Hamer" class="mx-auto mb-4 w-24 h-24"/>
+        <h2 class="text-white font-bold text-lg">Cruz Hamer</h2>
+        <p class="text-white text-sm">Co-founder & CTO</p>
+        <img src="Group 13.png" alt="socials" class="mx-auto mt-4"/>
+      </div>
+    </div>
+  </main>
+  
+
+  <section class="bg-[#012F34] py-20">
+    <h2 class="text-white text-4xl sm:text-5xl font-bold text-center">Some of our clients</h2>
+    <div class="flex flex-wrap justify-center gap-10 mt-12 px-4">
+      <img src="Bitmap (1).png" alt="Client 1" class=" w-[165px] h-[22px]"/>
+      <img src="Bitmap (2).png" alt="Client 2" class="w-[184px]  h-[18px]"/>
+      <img src="Object.png" alt="Client 3" class="w-[180px] h-[22px]"/>
+      <img src="Bitmap (4).png" alt="Client 4" class="w-[165px] h-[22px]"/>
+      <img src="gadgets-now.png" alt="Client 5" class="w-[98px] h-[36px]"/>
+    </div>
+  </section>
+  
+
+  <section class="bg-[#F67E7E] py-16 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center lg:text-left">Ready to get started?</h2>
+      <button class="text-black border border-black font-semibold py-3 px-6 rounded-full hover:bg-white hover:text-[#014E56] duration-300">
+        Contact Us
+      </button>
+    </div>
+  </section>
+  
+
+  <footer class="bg-[#002529] py-6 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <img src="myteam.png" alt="logo" class="w-28"/>
+      <div class="flex gap-4 text-white text-xl">
+        <i class="fab fa-facebook-f hover:text-[#F67E7E]"></i>
+        <i class="fab fa-instagram hover:text-[#F67E7E]"></i>
+        <i class="fab fa-twitter hover:text-[#F67E7E]"></i>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
